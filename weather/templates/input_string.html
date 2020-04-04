@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>word count</title>
+</head>
+<body>
+  <h1> Counts words and its frequency in your string </h1>
+  <form action={% url 'count'%}>
+  <label for="istring">Put your string here:</label><br>
+
+  <textarea id="istring" rows="4" cols="50" name="inputtext">
+  </textarea>
+  <br>
+  <input type="submit" value="Let's Count">
+</form>
+</body>
+</html>
