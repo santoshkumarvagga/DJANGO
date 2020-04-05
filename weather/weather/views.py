@@ -38,4 +38,5 @@ def count_result(request):
         else:
             count[i] = 1
     print('count is :',count)
-    return render(request, 'results_count.html', count)
+    context = {'count': count,}
+    return render(request, 'results_count.html', context)

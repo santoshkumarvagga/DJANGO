@@ -6,14 +6,9 @@
 <body>
   <h1> Counting of words and its frequency in your string is: </h1>
   <ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
+      {% for x,y in count.items %}
+      <li> '{{x}}' has occured {{y}}  times</li>
+      {% endfor %}
   </ul>
-  <ul>
-{% for x,y in count.items %}
-<li> Word {{x}} has occured {{y}}  times in your string.</li>
-{% endfor %}
-</ul>
 </body>
 </html>
