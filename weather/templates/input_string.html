@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>word count</title>
-</head>
-<body>
-  <h1> Counts words and its frequency in your string </h1>
-  <form action={% url 'count'%}>
-  <label for="istring">Put your string here:</label><br>
+<title > word count</title >
+</head >
+    <body >
 
-  <textarea id="istring" rows="4" cols="50" name="inputtext">
-  </textarea>
-  <br>
-  <input type="submit" value="Let's Count">
-</form>
-</body>
-</html>
+        <div class="jumbotron" >
+        <h1 style="background-color:MediumSeaGreen;" > Welcome to String Counter Application.</h1 >
+        <p style="background-color:DodgerBlue;" > Counts words and its frequency in your string.</p >
+        </div >
+
+        <form action= {% url 'count' %}>
+            <label for="istring" > Put your string here:</label > <br >
+            <textarea id="istring" rows="4" cols="50" name="inputtext" >
+            </textarea >
+            <br >
+            <input type="submit" value="Let's Count" >
+        </form >
+    </body >
+</html >

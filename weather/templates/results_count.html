@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>word count result</title>
+    <title>word count result</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1> Counting of words and its frequency in your string is: </h1>
-  <ul>
-      {% for x,y in count.items %}
-      <li> '{{x}}' has occured {{y}}  times</li>
-      {% endfor %}
-  </ul>
+    <div class="alert alert-success">
+        <strong>Success!</strong> Counting of words and its frequency in your string is:
+    </div>
+    <div class="container">
+        <table class="table table-dark table-hover">
+            <thead>
+                <tr>
+                    <th>String</th>
+                    <th>Frequency</th>
+                </tr>
+            </thead>
+            {% for x,y in count.items %}
+            <tbody>
+                <tr>
+                    <td>{{x}}</td>
+                    <td>{{y}}</td>
+                </tr>
+            </tbody>
+            {% endfor %}
+        </table>
+    </div>
 </body>
 </html>
